@@ -19,7 +19,6 @@ public class Calculator extends JFrame{
         super.setTitle("Calculator");
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         super.setLocationRelativeTo(null);
-        super.setVisible(true);
         
     }
     
