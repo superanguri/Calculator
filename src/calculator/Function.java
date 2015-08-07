@@ -1,26 +1,26 @@
 package calculator;
 
-public class Function<T>{
+public class Function{
 
-    private static <T> T addiere(T[] zahlen){
+    public static double addiere(T[] zahlen){
         
-        T ergebnis = null;
-        
-        
-        return ergebnis;
-    }
-    
-    private static <T> T subtrahiere(T[] zahlen){
-        
-        T ergebnis = null;
+        double ergebnis = null;
         
         
         return ergebnis;
     }
     
-    private static <T> T multipliziere(T[] zahlen){
+    public static double subtrahiere(T[] zahlen){
         
-        T ergebnis = null;
+        double ergebnis = null;
+        
+        
+        return ergebnis;
+    }
+    
+    public static double multipliziere(T[] zahlen){
+        
+        double ergebnis = null;
         
         
         return ergebnis;    
