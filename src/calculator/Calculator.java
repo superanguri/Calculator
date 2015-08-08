@@ -54,19 +54,17 @@ public class Calculator extends JFrame {
                 char keyChar = e.getKeyChar();
                 if (Function.isNumber(e.getKeyChar())) {
                     input.setText(input.getText() + e.getKeyChar());
-                } 
-                
-                else if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
+                } else if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
 
                     String text = input.getText();
                     if (text.length() > 0) {
                         String teil = text.substring(0, text.length() - 1);
                         input.setText(teil);
                     }
+                } //working on it
+                else if (keyChar == 42 || keyChar == 43 || keyChar == 45 || keyChar == 47) {
+                    input.setText(input.getText() + keyChar);
                 }
-                //working on it
-                else if(keyChar == 42 || keyChar == 43 || keyChar == 45 || keyChar == 47)
-                    input.setText(input.getText()+keyChar);
             }
         });
 
