@@ -51,9 +51,11 @@ public class Calculator extends JFrame {
         super.addKeyListener(new KeyAdapter() {
 
             public void keyPressed(KeyEvent e) {
+                char keyChar = e.getKeyChar();
                 if (Function.isNumber(e.getKeyChar())) {
                     input.setText(input.getText() + e.getKeyChar());
-                } //working on it
+                } 
+                
                 else if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
 
                     String text = input.getText();
@@ -62,7 +64,9 @@ public class Calculator extends JFrame {
                         input.setText(teil);
                     }
                 }
-
+                //working on it
+                else if(keyChar == 42 || keyChar == 43 || keyChar == 45 || keyChar == 47)
+                    input.setText(input.getText()+keyChar);
             }
         });
 
