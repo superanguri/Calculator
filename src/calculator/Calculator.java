@@ -83,7 +83,7 @@ public class Calculator extends JFrame {
     //Fct is here to init. the buttons with the numbers on it
     private void initCenter() {
 
-        for (int i = 1; i < numbers.length; i++) {
+        for (int i = 1; i < numbers.length; i++) {          //From 0 to numLength
 
             numbers[i] = new JButton(String.valueOf(i));
             numbers[i].addActionListener(new ActionListener() {
